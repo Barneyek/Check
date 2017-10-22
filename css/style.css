@@ -1,0 +1,176 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+html,
+body {
+  overflow-x: hidden;
+  margin: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#Wrapper {
+  margin: 20px auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1500px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media only screen and (max-width: 767px) {
+  #Wrapper {
+    max-width: calc(100% - 67px); } }
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  #Wrapper {
+    max-width: 740px; } }
+
+@media only screen and (max-width: 1199px) and (min-width: 960px) {
+  #Wrapper {
+    max-width: 960px; } }
+
+@media only screen and (min-width: 1200px) {
+  #Wrapper {
+    max-width: 1160px; } }
+
+@media only screen and (max-width: 767px) {
+  #flexHelp {
+    float: none;
+    background: none !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; } }
+
+.navbar-brand {
+  font-size: 24px;
+  float: none;
+  padding: 24px 15px; }
+
+.navbar-default {
+  background: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: -10px auto; }
+
+.pom {
+  padding-bottom: 15px; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar.navbar-fixed-top.fixed-theme {
+  background-color: #222;
+  border-color: #080808;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
+
+.navbar-container.fixed-theme {
+  padding: 0; }
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transition: 0.8s; }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.sticky {
+  position: fixed;
+  top: -5px;
+  background: rgba(247, 246, 246, 0.9);
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  z-index: 222;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-backface-visibility: hidden; }
+
+.menu-padding {
+  padding-bottom: 61px;
+  -webkit-transition: padding 0.5s linear;
+  -moz-transition: padding 0.5s linear;
+  -o-transition: padding 0.5s linear;
+  transition: padding 0.5s linear; }
+
+#hamburger {
+  margin-top: 14px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  float: none;
+  border: none; }
+
+#burger {
+  display: block; }
+  #burger span {
+    background: #444444;
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    -webkit-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s; }
+
+#hamburger.open span:nth-child(2),
+#hamburger.open span:nth-child(3) {
+  width: 0;
+  opacity: 0; }
+
+#hamburger.open span:nth-child(1) {
+  top: 14px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#hamburger.open span:nth-child(4) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -10px; }
+
+.headTitle {
+  color: #fff; }
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+  z-index: 3; }
+
+.titleName {
+  padding-top: 100px;
+  color: #fff; }
+
+#ParalaxHeader {
+  background-image: url("http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2015/03/daniel-petterson.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-color: #373737; }
