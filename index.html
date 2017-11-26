@@ -5,7 +5,7 @@
 
 <head>
     <title>Osiecki Damian Portfolio</title>
-    <!----------CSS ---------->
+    <!----------------------------------CSS---------------------------------->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -15,17 +15,17 @@
 <body>
     <div id="Wrapper">
 
-        <!----------MENU ---------->
-        <header id="menu" class="damian">
+        <!----------------------------------MENU---------------------------------->
+        <header id="menu">
             <div class="container">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="menu">
-                        <nav class="navbar navbar-default">
-                            <div class="pom">
-                               
-                                <div class="navbar-header" id="flexHelp">
-                                 
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#important-id-for-collapsing" aria-expanded="false" id="hamburger">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="dwa">
+                            <div id="menu">
+                                <nav class="navbar-default">
+                                    <div class="pom">
+                                        <div class="navbar-header" id="flexHelp">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#important-id-for-collapsing" aria-expanded="false" id="hamburger">
                                                 <span class="sr-only">Toggle navigation</span>
                                                     <div id="burger">
                                                         <span class="icon-bar"></span>
@@ -34,43 +34,345 @@
                                                         <span class="icon-bar"></span>
                                                     </div>
                                             </button>
-                                         
-                                    <a class="navbar-brand" href=""><img src="img/resume.png" class="img-responsive" id="logo" alt=""></a>
-                                </div>
-                                   </div>
-                                
-                                <div class="collapse navbar-collapse" id="important-id-for-collapsing">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Skills</a></li>
-                                        <li><a href="#">Experience</a></li>
-                                        <li><a href="#">Portfolio</a></li>
-                                        <li><a href="#">Edukacja</a></li>
-                                        <li><a href="#">Kontakt</a></li>
-                                    </ul>
-                                </div>
+                                            <a class="navbar-brand" href=""><img src="img/resume.png" class="img-responsive" alt=""></a>
+                                        </div>
+                                    </div>
 
-                        </nav>
+                                    <div class="collapse navbar-collapse" id="important-id-for-collapsing">
+                                        <ul class="nav navbar-nav">
+
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Skills</a></li>
+                                            <li><a href="#">Experience</a></li>
+                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">Edukacja</a></li>
+                                            <li><a href="#">Kontakt</a></li>
+                                        </ul>
+                                    </div>
+
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!----------HEADER ---------->
+
+        <!----------------------------------HEADER---------------------------------->
         <section id="ParalaxHeader">
             <div class="content-wrapper">
-                <div class="col-xs-10 col-sm-8 col-md-7 col-lg-7">
-                    <h1 class="titleName">Damian Osiecki</h1>
-                    <p style="color:#fff">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit impedit dolores a saepe nisi totam, laboriosam alias deserunt veniam recusandae, consequatur dicta sapiente adipisci ipsam placeat assumenda fuga odit!</p>
-                    <p> Officiis consequuntur molestiae ratione perspiciatis unde libero ex nihil iste sequi</p>
-                    <img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2015/03/signture.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-sm-7 col-md-6 col-lg-5">
+                            <h1 class="titleName">Damian Osiecki</h1>
+                            <h2 class="designer">designer</h2>
+                            <p class="big" style="color: #d1d1d1;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit impedit dolores a saepe nisi totam, laboriosam alias deserunt veniam recusandae, consequatur dicta sapiente adipisci ipsam placeat assumenda fuga odit!</p>
+                            <p class="big" style="color: #d1d1d1;"> Officiis consequuntur molestiae ratione perspiciatis unde libero ex nihil iste sequi ipsam placeat assumenda fuga odit!</p>
+                            <img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2015/03/signture.png" alt="">
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
                 </div>
-                <div class="col-md-6"></div>
             </div>
         </section>
+        <section id="section-web" class="panel" style="background-color:cyan;">
+            <div class="spacer s2"></div>
+            <div class="spacer s0"></div>
+            <div id="animate1" class="box2 skin">
+                <p>You wouldn't like me, when I'm angry!</p>
+                <a href="#" class="viewsource">view source</a>
+            </div>
+            <div class="spacer s2" id="trigger1"></div>
+        </section>
+        <!----------Skills ---------->
+        <section id="MySkills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="sectionTitle">My Skills</h2>
+                    </div>
+                </div>
+                <div class="paddingSkills">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">Photoshop<span class="labelSkills">49%</span></h6>
+                            <div class="skillbar clearfix " data-percent="49%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">CSS3<span class="labelSkills">74%</span></h6>
+                            <div class="skillbar clearfix " data-percent="74%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">JQuery<span class="labelSkills">89%</span></h6>
+                            <div class="skillbar clearfix " data-percent="89%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">3D Max<span class="labelSkills">78%</span></h6>
+                            <div class="skillbar clearfix " data-percent="78%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">HTML5<span class="labelSkills">90%</span></h6>
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h6 class="titleSkills">PHP<span class="labelSkills">50%</span></h6>
+                            <div class="skillbar clearfix " data-percent="50%">
+                                <div class="skillbar-bar" style="background: #000000;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------Experience ---------->
+        <section id="experience">
+            <div id="paddingTitle" style="background-color: #f3f3f3;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="sectionTitle">Experience</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paddingHelper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <h4>Frontend Developer</h4>
+                            <p class="big">Melbourne, Australia</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <p class="big">Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis.</p>
+                            <div class="hrDots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h5>Responsibilities:</h5>
+                            <ul class="list_mixed">
+                                <li class="list_check">knowledge of Photoshop</li>
+                                <li class="list_check">ability to cut layouts</li>
+                                <li class="list_check">knowledge of W3C standards</li>
+                                <li class="list_check">knowledge HTML5 &amp; jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h5>Experience:</h5>
+                            <ul class="list_mixed">
+                                <li class="list_star">Great job in a reputable company</li>
+                                <li class="list_star">Interesting projects for leading brands</li>
+                                <li class="list_star">Opportunity for professional development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <h4>Web designer</h4>
+                            <p class="big"> New York, USA</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <p class="big">Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis.</p>
+                            <div class="hrDots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h5>Responsibilities:</h5>
+                            <ul class="list_mixed">
+                                <li class="list_check">knowledge of Photoshop</li>
+                                <li class="list_check">ability to cut layouts</li>
+                                <li class="list_check">knowledge of W3C standards</li>
+                                <li class="list_check">knowledge HTML5 &amp; jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h5>Experience:</h5>
+                            <ul class="list_mixed">
+                                <li class="list_star">Great job in a reputable company</li>
+                                <li class="list_star">Interesting projects for leading brands</li>
+                                <li class="list_star">Opportunity for professional development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div id="paddingTitle" style="background-color: #505050;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="sectionTitle" style="color:#fff;">Portfolio</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexGrid">
+                <ul id="hoverPortfolio" class="hover-effect">
+                    <li>
+                        <a href="http://dribbble.com/shots/504197-Mr-Crabs">
+							<img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2014/05/portfolio_1-576x384.jpg" class="img-responsive" >
+							<div><span>HIGHLANDER</span><p>strona internetowa</p></div>
+						</a>
+                    </li>
+                </ul>
+                <ul id="hoverPortfolio" class="hover-effect">
+                    <li>
+                        <a href="http://dribbble.com/shots/504336-TN-Aquarium">
+							<img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2014/05/portfolio_3-576x384.jpg" class="img-responsive">
+							<div><span>TN Aquarium by Charlie Gann</span></div>
+						</a>
+                    </li>
+                </ul>
+                <ul id="hoverPortfolio" class="hover-effect">
+                    <li>
+                        <a href="http://dribbble.com/shots/504197-Mr-Crabs">
+							<img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2014/05/portfolio_1-576x384.jpg" class="img-responsive" >
+							<div><span>Mr. Crabs by John Generalov</span></div>
+                                                </a>
+                    </li>
+                </ul>
+                <ul id="hoverPortfolio" class="hover-effect">
+                    <li>
+                        <a href="http://dribbble.com/shots/504336-TN-Aquarium">
+							    <img src="http://betheme.muffingroupsc.netdna-cdn.com/be/resume/wp-content/uploads/2014/05/portfolio_3-576x384.jpg" class="img-responsive">
+							<div class="photo"><span>My Muse by Zachary Horst</span></div>
+					        	</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!----------Experience ---------->
+        <section id="experience">
+            <div id="paddingTitle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="sectionTitle">Eductation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline_items">
+                            <li>
+                                <h3><span>11.05.2013</span>Aenean ferme ntum elit eget</h3>
+                                <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum stie id viverra.</div>
+                            </li>
+                            <li>
+                                <h3><span>15.08.2013</span>Quisque lorem tortor fringilla</h3>
+                                <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum stie id viverra.</div>
+                            </li>
+                            <li>
+                                <h3><span>29.12.2013</span>Vitae adipiscing turpis aen</h3>
+                                <div class="desc">Vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum stie id viverra.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------Contact ---------->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <h2 style="color:#fff; text-align: right;">Write Message</h2>
+                        <p class="big" style="color:#fff; text-align: right;">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+                        </p>
+                        <p class="big" style="color:#D7E4E1; text-align: right;">My profiles in social media:
+                        </p>
 
+                        <div class="icons">
+                            <a href="https://www.facebook.com/Baaarni" class="item-fb">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://plus.google.com/103853260823028311676?hl=pl" class="item-gp">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i> </a>
+                            <a href="https://www.linkedin.com/in/damian-osiecki-a31404124/" class="item-li">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Barneyek" class="item-gi">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="flexContact">
+                                <div class="left">
+                                    <div class="form-group" style="    margin-right: 15px;">
+                                        <input id="form_name" type="text" class="form-control" name="user" placeholder="Imię i Nazwisko" required="required" data-error="Imie i Nazwisko jest wymagane.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" class="form-control" name="email" placeholder="Adres email" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input id="form_email" type="subject" class="form-control" name="subject" placeholder="Temat" required="required" data-error="Valid email is required.">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form_message" class="form-control" name="message" rows="5" title="Pomóż mi sie rozwijać" data-toggle="tooltip" data-placement="top" required="required" data-error="Please,leave us a message."></textarea>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-hire btn-lg"> Wyślij wiadomość</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="flexFooter">
+                        <div class="col-lg-10 col-md-10">
+                            <p class="copyright">© 2017 All Rights Reserved Osiecki Damian</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <img src="img/up.png" style="padding-right: 20px;" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!----------JS ---------->
+
+
+
+    <!----------------------------------JS---------------------------------->
 
 
     <script type="text/javascript" src="/js/lib/jquery.min.js"></script>
@@ -81,12 +383,45 @@
     <script type="text/javascript" src="/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="/js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script type="text/javascript" src="/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script src="js/navbar.js"></script>
+    <!--    <script src="js/navbar.js"></script>-->
     <script src="js/hamurger.js"></script>
+    <script src="js/modernizr.custom.97074.js"></script>
+    <script src="js/skillbar.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript">
+        $(function() {
 
+            $(' #hoverPortfolio > li ').each(function() {
+                $(this).hoverdir();
+            });
 
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(function() {
+
+            $(' #photo > span ').each(function() {
+                $(this).hoverdir();
+            });
+
+        });
+
+    </script>
     <script>
-
+        // TUTAJ SCROLL MENu
+        $(function() {
+            var controller = new ScrollMagic.Controller();
+            var scene = new ScrollMagic.Scene({
+                    triggerElement: "#trigger1"
+                })
+                .setClassToggle("#dwa", "ok")
+                .setClassToggle("#menu", "sticky")
+                .addIndicators({
+                    name: "1 (duration: 0)"
+                })
+                .addTo(controller);
+        });
 
     </script>
 </body>
