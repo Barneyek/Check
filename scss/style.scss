@@ -26,6 +26,62 @@ color:#444444,
 margin-bottom: 25px,
 font-family: "Lato");
 
+$socialAfterSelection: ( font-family: FontAwesome,
+position: absolute,
+width: 100%,
+height: 100%,
+color: #fff,
+z-index: 2,
+border: solid 1px #fff,
+top: 100%,
+left: 0,
+line-height: 3,
+transition: all .3s ease-in-out,
+font-size: 17px);
+
+@mixin socialAfter($font-family,
+$position,
+$width,
+$height,
+$color,
+$z-index,
+$border,
+$top,
+$left,
+$line-height,
+$transition,
+$font-size) {
+    font-family: $font-family;
+    position: $position;
+    width: $width;
+    height: $height;
+    color: $color;
+    z-index: $z-index;
+    border: $border;
+    top: $top;
+    left: $left;
+    line-height: $line-height;
+    transition: $transition;
+    font-size: $font-size;
+}
+
+$socialBeforeSelection:( content:"",
+position:absolute,
+z-index:1,
+transition: all .3s ease-in-out);
+
+@mixin socialBefore( $content,
+$position,
+$z-index,
+$transition) {
+    content: $content;
+    position: $position;
+    z-index: $z-index;
+    transition: $transition;
+}
+
+
+
 @mixin icons($position,
 $height,
 $width,
@@ -754,30 +810,12 @@ ul.list_mixed li:last-child:after {
         top: 0;
     }
     .item-fb:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #3b5998;
-        top: 100%;
-        left: 0;
-        z-index: 1;
-        transition: all .3s ease-in-out;
+        @include socialBefore($socialBeforeSelection...);
     }
     .item-fb:after {
         content: '\f09a';
-        font-family: FontAwesome;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        z-index: 2;
-        border: solid 1px #fff;
-        top: 100%;
-        left: 0;
-        line-height: 3;
-        transition: all .3s ease-in-out;
-        font-size: 17px;
+        background-color: #3b5998;
+        @include socialAfter($socialAfterSelection...);
     }
     .item-gp {
         @include icons($iconsSelection...);
@@ -789,30 +827,14 @@ ul.list_mixed li:last-child:after {
         top: 0;
     }
     .item-gp:before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        transition: all .3s ease-in-out;
+        @include socialBefore($socialBeforeSelection...);
     }
     .item-gp:after {
         content: '\f0d5';
-        font-family: FontAwesome;
-        position: absolute;
         background-color: #db4437;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        z-index: 2;
-        border: solid 1px #fff;
-        top: 100%;
-        left: 0;
-        line-height: 3;
-        transition: all .3s ease-in-out;
-        font-size: 17px;
+        @include socialAfter($socialAfterSelection...);
     }
 }
-
-
 
 .icons .item-li {
     @include icons($iconsSelection...);
@@ -827,27 +849,13 @@ ul.list_mixed li:last-child:after {
 }
 
 .icons .item-li:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    transition: all .3s ease-in-out;
+    @include socialBefore($socialBeforeSelection...);
 }
 
 .icons .item-li:after {
     content: '\f0e1';
-    font-family: FontAwesome;
-    position: absolute;
     background-color: #0077B5;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    z-index: 2;
-    border: solid 1px #fff;
-    top: 100%;
-    left: 0;
-    line-height: 3;
-    transition: all .3s ease-in-out;
-    font-size: 17px;
+    @include socialAfter($socialAfterSelection...);
 }
 
 .icons .item-gi {
@@ -863,27 +871,13 @@ ul.list_mixed li:last-child:after {
 }
 
 .icons .item-gi:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    transition: all .3s ease-in-out;
+    @include socialBefore($socialBeforeSelection...);
 }
 
 .icons .item-gi:after {
     content: '\f09b';
-    font-family: FontAwesome;
-    position: absolute;
     background-color: #24292e;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    z-index: 2;
-    border: solid 1px #fff;
-    top: 100%;
-    left: 0;
-    line-height: 3;
-    transition: all .3s ease-in-out;
-    font-size: 17px;
+    @include socialAfter($socialAfterSelection...);
 }
 
 .icons a {
