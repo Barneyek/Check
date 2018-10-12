@@ -1,3 +1,4 @@
-# Wordpress-Portfolio Portfolio pod word-pressa.
+# Wordpress-Portfolio
 
-Portfolio pod word-pressa. Portfolio pod word-pressa.Portfolio pod word-pressa.Portfolio pod word-pressa.Portfolio pod word-pressa.Portfolio pod word-pressa.
+Stworzona strona posłużyła jako nauka konwersji statycznej strony HTML do WordPressa.
+Efekt http://osieckidamian.pl/.
